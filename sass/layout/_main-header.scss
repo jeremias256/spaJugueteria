@@ -1,0 +1,193 @@
+//? estilos carrito
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.main-header {
+    background-color: #fa2222;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    // flex-basis: 2px;
+    // z-index: 0;
+    // @media (min-width: 1326px) {
+    //     margin: 0 auto;
+    // }
+
+    &__container-top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-basis: 2px;
+        z-index: 0;
+        @media (min-width: 1024px){
+            max-width: 1600px;
+            margin:0 auto;
+        }
+    }
+    
+    &__logo-container{
+        background-image: url(../../img/iconos/LogoMakr-74R8Ui.png);
+        background-repeat: no-repeat;
+        background-size: 150px 55px;
+        background-position: 5px;
+        display: flex;
+        height: 65px;
+        width: 100%;
+        padding: 1em;
+        flex-basis: 10em;
+
+
+        @media (min-width: 480px){
+            background-size: 150px 60px;
+            height: 81px;
+            flex-basis: 11em;
+        }
+        
+        @media (min-width: 768px){
+            height: 90px;
+            background-size: 210px 80px;
+            flex-basis: 13.5em;
+        }
+
+        @media (min-width: 1024px){
+            margin-left: 1em;
+        }
+        @media (min-width:1600px){
+            margin-left: 1%;
+        }
+    }
+    
+    &__search-form-container {
+        padding: 1em 1em;
+        flex-grow: 0;
+        display: flex;
+        background-color: #d81d13;
+
+        width: 100%;
+        order: 1;
+        
+        & input {
+            background-color: #f4f4f4;
+            padding-left: 13px;
+            border-radius: 20px 0 0 20px; 
+            border: solid 3px #fa2222;
+            width: 100%;
+            height: 45px;
+                
+            @media (min-width: 768px) {
+                border-top: 1px solid rgba(32, 32, 32, 0.096);
+                height: 48px;
+                border: solid 3px #d81d13;
+            }
+        }
+        
+        & label{
+            border-radius:0 20px 20px 0; 
+            padding-right: 5px;
+            background-color: #fa2222;
+            width: 60px;
+            color: #f4f4f4;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & i {
+                font-size: 30px;
+                // font-weight: 600;
+            }
+            
+            @media (min-width:768px) {
+                height: 48px;
+                background-color: #d81d13;
+            } 
+        }
+        
+        @media (min-width: 480px) {
+            width: 100%;
+            margin: auto;
+        }
+        
+        @media (min-width: 768px){
+            // border: solid red 2px;
+            background-color: #fa2222;
+            width: 80%;
+            max-width: 900px;
+            order: 2;
+            flex-basis: 62%;
+            flex-grow: 0;
+            flex-shrink: 1;
+            padding-top: 1em;
+            margin-top: 5px;
+        }
+    }
+    
+    &__cart-button-container {
+        background-image: url('../../img/iconos/icons8-shopping-trolley-64.png');
+        background-repeat:no-repeat ;
+        background-position: center 18px;
+        background-size: 29px;
+        margin-left: auto;
+        width: 55px;
+        cursor: pointer;
+        
+        @media (min-width: 768px){
+            background-position: left 30px;
+            display: flex;
+            order: 2;
+            max-width: 70px;
+            margin:0 auto;
+        }
+
+        @media (min-width: 1024px) {
+        }
+
+        // &--press:hover {
+        //     // margin-right: 5px;
+        //     position: absolute;
+        //     background-position: 7px 7px;
+        //     right: 52px;
+        //     margin-top: 11px;
+        //     border-radius: 50%;
+        //     height: 43px;
+        //     width: 45px;
+        //     outline: #f4f4f4 solid 1px;
+        // }
+    }
+
+    &__hamburger-button-container {
+
+        padding: 17px 12px 1em 4px;
+
+        @media (min-width: 768px){
+            display: none;
+        }
+    }
+
+    &__main-nav-container {
+        flex-basis: 100%;
+        display: none;
+        flex-grow: 1;
+        top: 50px;
+        background-color: #d81d13;
+
+        
+        @media (min-width: 768px){
+            border-top: 1px solid rgba(32, 32, 32, 0.096);
+            // flex-basis: auto;
+            flex-grow: 1;
+            order: 3;
+            display: block;
+            height: 75px;
+        }
+    }
+    @media (min-width: 1024px){
+        // padding: 0 20%;}
+        margin:0 auto;
+    }
+}
+

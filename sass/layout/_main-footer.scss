@@ -1,0 +1,113 @@
+.main-footer {
+    color: #f4f4f4;
+    border-top: 3px solid #86afcb;
+    margin-top: 3rem;
+    padding: 2rem 0 .02rem;
+    background-color: #d81d13;
+
+    &__container {
+        @media (min-width: 1024px){
+            max-width: 1600px;
+            margin:0 auto;
+        }
+    }
+    
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        
+        &-card {
+            flex: 1;
+            color: #f4f4f4;
+            text-align: center;
+            
+            & h3 {
+                font-family: 'Hammersmith One', sans-serif;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            & h3,
+            nav {
+                display: flex;
+                flex-direction: column;
+            }
+
+            & ul li {
+                list-style-type: none;
+                padding: 5px 0;
+            }
+            
+            & a {
+                color: #f4f4f4;
+                padding: 5px 0;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            &:first-child{
+                & h3 {
+                    margin: auto;
+                    width: 300px;
+                }
+
+                @media (min-width: 480px){
+                    min-width: 100%;
+                    margin:auto;
+                    & ul {
+                        margin: auto;
+                    }
+                }
+
+                @media (min-width: 768px){
+                    min-width: 40%;
+                    margin: auto;
+                }
+            }
+
+            @media (min-width: 768px) {
+                text-align: left;
+                & a {
+                    text-align: left;
+                }
+            }
+            
+        }
+
+        @media (min-width: 480px){
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 1px;
+        }
+        
+        @media (min-width: 768px) {
+            flex-wrap: nowrap;
+            align-items: center;
+            column-gap: 5%;
+        }
+    }
+    
+    &__icons {
+        margin: 0 50px;
+        border-bottom: #f4f4f46d solid .5px;
+        text-align: center;
+        
+        & i {
+            padding: 0 10px 30px;
+        }
+    }
+    
+    &__copyright {
+        margin-top: 2rem;
+        font-weight: 400;
+        color: #221f1f;
+        text-align: center;
+        font-size: 12px;
+        height: 3em;
+        background-color: #fffc33f4;
+        padding: 12px;
+    }
+
+}
